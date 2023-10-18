@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Modify this to match your repository's main branch
+  pull_request:
+    branches: [ "main" ]    
 
 jobs:
   gitleaks:
